@@ -1,0 +1,50 @@
+header.kbia-top{
+	position:fixed;
+	z-index: 50;
+	height:50px;
+	width:100%;
+	background-color: #fff;
+	border-bottom:1px solid lighten(black,90%);
+
+	img.logo{
+		max-height:100%;
+		padding-top:7px;
+		padding-bottom:5px;
+		padding-left:50px;
+
+	}
+}
+
+header.kbia-top-dark{
+	background-color: $project-background-dark;
+	border-bottom: 1px solid lighten($project-background-dark, 20%);
+}
+
+div.container:first-of-type{
+	padding-top:65px;
+}
+
+@media screen and (max-width: 700px){
+	header.kbia-top{
+
+		img.logo{
+			padding-left: 1rem;
+		}
+
+		a.nav-trigger-button{
+			margin-right: 1rem;
+		}
+
+	}
+}
+
+div.credit{
+	border-top: 1px solid lighten($gray-dark, 10%);
+	margin-top: 1.5rem;
+	padding-top: 1rem;
+	p{
+		text-align: center;
+		font-size: 0.8rem;
+		color: lighten($gray-dark, 30%);
+	}
+}
